@@ -1,0 +1,22 @@
+<h1>Admin Panel</h1>
+<table *ngIf="admin_manage" class="table table-striped">
+  <thead>
+    <tr>
+      <td>Mark ID</td>
+      <td>Student</td>
+      <td>Mark</td>
+      <td>Subject</td>
+      <td>Teacher</td>
+      <td></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let t of admin_manage">
+      <td>{{t.mark}}</td>
+      <td>{{t.student}}</td>
+      <td>{{t.studentsMark}}</td>
+      <td>{{t.name}}</td>
+      <td>{{t.teacher}}</td>
+    </tr>
+  </tbody>
+</table>

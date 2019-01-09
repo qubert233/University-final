@@ -1,0 +1,27 @@
+<h1>Students Group</h1>
+<table *ngIf="students_group" class="table table-striped">
+  <thead>
+    <tr>
+      <td>FirstName</td>
+      <td>LastName</td>
+      <td>LogBook</td>
+      <td>Phone</td>
+      <td>Birthday</td>
+      <td>Email</td>
+      <td>Address</td>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let t of students_group">
+      <td>{{t.firstName}}</td>
+      <td>{{t.lastName}}</td>
+      <td>{{t.logbook}}</td>
+      <td>{{t.number}}</td>
+      <td>{{t.birthday | date: 'fullDate'}}</td>
+      <td>{{t.email}}</td>
+      <td>{{t.address}}</td>
+
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,15 @@
+<h1>Speciality</h1>
+<table *ngIf="specialities" class="table table-striped">
+  <thead>
+  <tr>
+    <td>ID</td>
+    <td>Name</td>
+    </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let t of specialities">
+    <td>{{t.id}}</td>
+    <td>{{t.name}}</td>
+    </tr>
+  </tbody>
+</table>

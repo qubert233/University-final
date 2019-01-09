@@ -1,0 +1,21 @@
+<h1>Teachers Marks</h1>
+<table *ngIf="teachers_mark" class="table table-striped">
+  <thead>
+  <tr>
+    <td>Subject</td>
+    <td>Group</td>
+    <td>Student</td>
+    <td>Mark</td>
+   
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let t of teachers_mark">
+    <td>{{t.name}}</td>
+    <td>{{t.group}}</td>
+    <td>{{t.students}}</td>
+    <td>{{t.studentsMark}}</td>
+   
+    </tr>
+  </tbody>
+</table>

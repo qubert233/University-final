@@ -1,0 +1,89 @@
+<nav class="navbar navbar-default navbar-static-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse' [attr.aria-expanded]='isExpanded' (click)='toggle()'>
+        <span class='sr-only'>Toggle navigation</span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+      </button>
+      <a class='navbar-brand' [routerLink]='["/"]'>Manage University</a>
+
+    </div>
+    <div class="navbar-collapse collapse" [ngClass]='{ "in": isExpanded }'>
+      <div class="menu">
+        <ul class="nav nav-tabs navbar-nav" role="tablist">
+          <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+            <a [routerLink]='["/"]' (click)='collapse()'>
+              <span class='glyphicon glyphicon-home'></span> Home
+            </a>
+          </li>
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class='glyphicon glyphicon-user'></span> Admin <span class="caret"></span></a>
+            <ul class="dropdown-menu" *ngIf="getRole()=='admin'">
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/adminmanage"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-user'></span> Admin Panel
+                </a>
+              </li>
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/speciality"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-education'></span> Speciality
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class='glyphicon glyphicon-education'></span> Student <span class="caret"></span></a>
+            <ul class="dropdown-menu" *ngIf="getRole()=='student'">
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/studentshedule"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-education'></span> Shedule
+                </a>
+              </li>
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/studentgroup"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-education'></span> Group
+                </a>
+              </li>
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/studentmark"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-education'></span> Marks
+                </a>
+              </li>
+            </ul>
+          </li>
+
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class='glyphicon glyphicon-education'></span>  Teacher <span class="caret"></span></a>
+            <ul class="dropdown-menu" *ngIf="getRole()=='teacher'">
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/teachershedule"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-education'></span> Shedule
+                </a>
+              </li>
+              <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/teachermark"]' (click)='collapse()'>
+                  <span class='glyphicon glyphicon-education'></span> Marks
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li [routerLinkActive]='["link-active"]'>
+            <a [routerLink]='["/login"]' (click)='collapse()'>
+              <div *ngIf="showLogin(); then logout else login"> Logout</div>
+              <ng-template #logout><span class='glyphicon glyphicon-log-out'></span> Logout <br />Hello again, {{getUser()}}! </ng-template>
+              <ng-template #login><span class='glyphicon glyphicon-log-in'></span> Login</ng-template>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div><!--/.container-->
+</nav><!--/nav-->
+

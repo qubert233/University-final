@@ -1,0 +1,112 @@
+
+
+.contact-info {
+  color: #fff;
+}
+
+  .contact-info ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+    .contact-info ul li i {
+      margin-bottom: 20px;
+    }
+
+.widget {
+  padding-left: 0;
+}
+
+ul.sidebar-gallery {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-gallery li {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  border-radius: 0px;
+}
+
+  .sidebar-gallery li a {
+    display: inline-block;
+  }
+
+ul.social-network {
+  list-style: none;
+  margin-top: 20px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.sub-footer {
+  background: #04396c;
+  margin-top:100px;
+  /*position: absolute;*/
+
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 30px;
+  font-size: 20px;
+  margin-left: -10px;
+}
+
+  ul.social-network li a {
+    color: #d0d0d0;
+    text-decoration:none;
+  }
+
+.social-network li:hover .fa-twitter {
+  color: #00abf0;
+}
+
+.social-network li:hover .fa-facebook {
+  color: #39579a;
+}
+
+.social-network li:hover .fa-google-plus {
+  color: #eb8984;
+}
+
+.social-network li:hover .fa-pinterest {
+  color: #c9171e;
+}
+
+.social-network li:hover .fa-linkedin {
+  color: #0077b5;
+}
+
+.social-network li:hover .fa-youtube-play {
+  color: #C84941;
+}
+
+.social-network li:hover .fa-dribbble {
+  color: #EA4C89;
+}
+
+.social-network li:hover .fa-pinterest-square {
+  color: #EA4B49;
+}
+
+.copyright {
+  margin-top: 30px;
+}
+
+  .copyright a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    text-shadow: none;
+  }
+  .copyright p {
+    color: #d0d0d0;
+    font-size: 12px;
+    text-shadow: none;
+  }

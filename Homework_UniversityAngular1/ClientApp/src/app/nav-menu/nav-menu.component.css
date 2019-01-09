@@ -1,0 +1,89 @@
+/*===========================
+  Menu and Navigation
+============================ */
+.navbar-brand {
+  float: left;
+  height: 50px;
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+
+.navbar-brand h1 {
+  margin-top: 0px;
+  padding-top: 20px;
+  float: left;
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.menu {
+  font-size: 12px;
+  float: right;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 0px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+  .navbar-collapse.in {
+    overflow-y: auto;
+  }
+
+.menu ul.nav-tabs li {
+  color: #fff;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+}
+
+  .nav-tabs > li {
+    float: left;
+    margin-bottom: 0;
+  }
+
+    .nav-tabs > li > a {
+      border-radius: 0;
+      color: #fff;
+      padding: 30px;
+    }
+
+      .nav-tabs > li > a:hover {
+        color: #272727;
+        background: #fff;
+      }
+
+      .nav-tabs > li > a:visited {
+        color: #fff;
+        background: #b3cde0;
+      }
+
+      .nav-tabs > li > a:active {
+        color: #035b96;
+        cursor: default;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-bottom-color: #fff;
+      }
+
+.navbar-default {
+  background-color: #6497b1;
+  border-color: #6497b1;
+}

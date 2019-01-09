@@ -1,0 +1,27 @@
+<h1>Teachers Shedule</h1>
+<table *ngIf="teachers_shedule" class="table table-striped">
+  <thead>
+  <tr>
+    <td>Group</td>
+    <td>Day</td>
+    <td>Start</td>
+    <td>Finish</td>
+    <td>Auditory</td>
+    <td>Teacher</td>
+    <td>Subject</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let t of teachers_shedule">
+    <td>{{t.group}}</td>
+    <td>{{t.day | date: 'EEEE'}}</td>
+    <td>{{t.start | date:'short'}}</td>
+    <td>{{t.finish | date:'short'}}</td>
+    <td>{{t.audience}}</td>
+    <td>{{t.teacher}}</td>
+    <td>{{t.subject}}</td>
+
+
+    </tr>
+  </tbody>
+</table>
